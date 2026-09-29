@@ -1,0 +1,37 @@
+:root {
+  --cream: #fffbeb;
+  --cream-dark: #fef3c7;
+  --brown: #451a03;
+  --orange: #d97706;
+  --pink: #ec4899;
+  --muted: #a8a29e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+  color: var(--brown);
+  background: var(--cream);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--pink);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
